@@ -20,7 +20,7 @@ node() {
   //   // step([$class: 'UploadBuild',tenantId: "5ade13625558f2c6688d15ce",revision: "${check.GIT_COMMIT}",appName: "SAP_Build",requestor: "admin",id: "${BUILD_NUMBER}"])
 //}
 echo "(*******)"
-stage('Start Launch Process'){	
+stage('Publish Artificats to Launch'){	
   step([$class: 'UCDeployPublisher',
 	        siteName: 'UCD',
 	        component: [
@@ -58,7 +58,7 @@ stage('Start Launch Process'){
          versionName: "2.0.${BUILD_NUMBER}"
       )
 }
-	stage ('Trigger Launch for ASOC and OneTest DEV') {
+	stage ('Trigger Launch for ASOC and OneTest') {
 	step([$class: 'UCDeployPublisher',
 		deploy: [ createSnapshot: [deployWithSnapshot: true, 
 			 snapshotName: "2.0.${BUILD_NUMBER}"],
