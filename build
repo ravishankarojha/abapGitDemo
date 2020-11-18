@@ -1,4 +1,4 @@
-node {
+node() {
          def check
   // def majorVersion="1.0.${BUILD_NUMBER}"
   def majorVersion="${BUILD_NUMBER}"
