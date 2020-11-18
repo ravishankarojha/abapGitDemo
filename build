@@ -20,7 +20,7 @@ node() {
   //   // step([$class: 'UploadBuild',tenantId: "5ade13625558f2c6688d15ce",revision: "${check.GIT_COMMIT}",appName: "SAP_Build",requestor: "admin",id: "${BUILD_NUMBER}"])
 //}
 echo "(*******)"
-stage('Publish Artificats to UCD'){	
+stage('Start Launch Process'){	
   step([$class: 'UCDeployPublisher',
 	        siteName: 'UCD',
 	        component: [
@@ -58,7 +58,7 @@ stage('Publish Artificats to UCD'){
          versionName: "2.0.${BUILD_NUMBER}"
       )
 }
-	stage ('Deploy to DEV') {
+	stage ('Trigger Launch for ASOC and OneTest DEV') {
 	step([$class: 'UCDeployPublisher',
 		deploy: [ createSnapshot: [deployWithSnapshot: true, 
 			 snapshotName: "2.0.${BUILD_NUMBER}"],
@@ -72,9 +72,5 @@ stage('Publish Artificats to UCD'){
 		siteName: 'UCD'])
  }
 	
-stage ('wait for deploy') {
-	//sleep 10
-	// echo 'Executing HCL One test ...'
-	//sh '/var/jenkins_home/onetest/hcl-onetest-command.sh'
- }	
+	
 }
