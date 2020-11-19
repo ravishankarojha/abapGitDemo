@@ -9,8 +9,7 @@
 
 ** Changes for FBEP-868
 
-** chnages done for DB demo
-
+** chnages for DB demo
 ***********************************************************************************
 
 REPORT  ZABAP_ALIAS_AUTH_IN_AUTHCHECK.
