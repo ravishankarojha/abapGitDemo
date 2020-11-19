@@ -66,7 +66,7 @@ stage('Publish Artificats to Launch'){
 			 deployDesc: 'Requested from Jenkins', 
 			 deployEnv: 'DEV-ES1001', 
 			 deployOnlyChanged: false, 
-			 deployProc: 'deploy', 
+			 deployProc: 'Test', 
 			 deployReqProps: '', 
 			 deployVersions: "ABAP:2.0.${BUILD_NUMBER}"], 
 		siteName: 'UCD'])
