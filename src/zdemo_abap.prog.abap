@@ -9,7 +9,7 @@
 
 ** Changes for FBEP-868
 
-** chnages for DB demo
+** changes done for title
 ***********************************************************************************
 
 REPORT  ZABAP_ALIAS_AUTH_IN_AUTHCHECK.
@@ -65,9 +65,11 @@ START-OF-SELECTION.
   .
   parameters P_mtart type mtart NO-DISPLAY.
 
-  parameters p_dbcon type dbcon_name.
+  parameters p_dbcon type dbcon_name NO-DISPLAY.
 
   parameters p_num type sytabix.
+
+  parameters p_sorg type vkorg.
 
   PERFORM get_data.
 

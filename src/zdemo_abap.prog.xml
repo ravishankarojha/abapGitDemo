@@ -12,7 +12,7 @@
    <TPOOL>
     <item>
      <ID>R</ID>
-     <ENTRY>Demo for DB</ENTRY>
+     <ENTRY>List of Company Codes</ENTRY>
      <LENGTH>21</LENGTH>
     </item>
     <item>
@@ -26,6 +26,12 @@
      <KEY>P_NUM</KEY>
      <ENTRY>Company code</ENTRY>
      <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_SORG</KEY>
+     <ENTRY>Sales org</ENTRY>
+     <LENGTH>17</LENGTH>
     </item>
    </TPOOL>
   </asx:values>
