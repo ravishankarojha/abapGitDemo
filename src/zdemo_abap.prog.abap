@@ -69,7 +69,7 @@ START-OF-SELECTION.
 
   parameters p_num type sytabix.
 
-  parameters p_sorg type vkorg.
+*  parameters p_sorg type vkorg.
 
   PERFORM get_data.
 
