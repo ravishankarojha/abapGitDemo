@@ -8,6 +8,7 @@
 
 
 ** Changes for FBEP-868 latest
+** Updated for accelerate on 24Nov
 ** changes for demo
 ** chnages for demo
 ***********************************************************************************
