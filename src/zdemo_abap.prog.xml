@@ -12,8 +12,8 @@
    <TPOOL>
     <item>
      <ID>R</ID>
-     <ENTRY>List of company codes</ENTRY>
-     <LENGTH>21</LENGTH>
+     <ENTRY>List of company codes for demo</ENTRY>
+     <LENGTH>30</LENGTH>
     </item>
     <item>
      <ID>S</ID>
