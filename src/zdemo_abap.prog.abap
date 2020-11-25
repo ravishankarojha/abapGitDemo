@@ -8,7 +8,7 @@
 
 
 ** Changes for FBEP-868 latest
-** Changes for FBEP on 25Nov
+** Changes for FBEP for Accelerate on 25Nov
 ** Updated for accelerate on 24Nov-20
 
 ***********************************************************************************
