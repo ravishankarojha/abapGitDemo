@@ -8,7 +8,7 @@
 
 ** changes for demo SI
 ** Changes for FBEP-868 latest
-** Changes for FBEP for Accelerate on 8Feb-2021
+** Changes for FBEP for Accelerate on 8Feb-2021 Updated
 ** Change updated for demo for 16 Dec
 ** Updated for accelerate on 24Nov-20
 
