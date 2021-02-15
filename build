@@ -1,7 +1,7 @@
 node() {
   
   def check
-  // def majorVersion="1.0.${BUILD_NUMBER}"
+  // def majorVersion="3.0.${BUILD_NUMBER}"
   def majorVersion="${BUILD_NUMBER}"
   currentBuild.displayName = majorVersion
   def GIT_COMMIT
@@ -33,7 +33,7 @@ stage('Publish Artificats to Launch'){
 	            ],
 	            delivery: [
 	                $class: 'com.urbancode.jenkins.plugins.ucdeploy.DeliveryHelper$Push',
-	                pushVersion: '2.1.${BUILD_NUMBER}',
+	                pushVersion: '3.1.${BUILD_NUMBER}',
 	                //baseDir: '/var/jenkins_home/workspace/JPetStore/target',
 			 baseDir: '/usar/ucd/temp/',
 	                fileIncludePatterns: '*.*',
@@ -55,20 +55,20 @@ stage('Publish Artificats to Launch'){
          appName: "SAP_ABAP-BE", 
          requestor: "admin", 
          id: "${newComponentVersionId}", 
-         versionName: "2.1.${BUILD_NUMBER}"
+         versionName: "3.1.${BUILD_NUMBER}"
       )
 }
 	stage ('Trigger Launch for ASOC and OneTest') {
 	step([$class: 'UCDeployPublisher',
 		deploy: [ createSnapshot: [deployWithSnapshot: true, 
-			 snapshotName: "2.1.${BUILD_NUMBER}"],
+			 snapshotName: "3.1.${BUILD_NUMBER}"],
 			 deployApp: 'SAP_ABAP-BE', 
 			 deployDesc: 'Requested from Jenkins', 
 			 deployEnv: 'DEV-ES1001', 
 			 deployOnlyChanged: false, 
 			 deployProc: 'Test', 
 			 deployReqProps: '', 
-			 deployVersions: "ABAP:2.1.${BUILD_NUMBER}"], 
+			 deployVersions: "ABAP:3.1.${BUILD_NUMBER}"], 
 		siteName: 'UCD'])
  }
 	
